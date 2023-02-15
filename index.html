@@ -41,11 +41,12 @@
       .list-header {
         flex: 0 0 auto;
         background: #efeeef;
+        overflow-y: scroll;
       }
 
       .list-body {
         flex: 1 0 0;
-        overflow: auto;
+        overflow-y: scroll;
       }
 
       .list-wrapper {
@@ -56,6 +57,10 @@
         background: #f7f8f8;
       }
 
+      .list-wrapper > div:hover {
+        background: #ddd;
+      }
+
       .flex {
         display: flex;
       }
@@ -63,6 +68,7 @@
       .flex > div {
         flex: 1 0 0;
         padding: 5px;
+        overflow: hidden;
       }
 
       .flex > div + div {
